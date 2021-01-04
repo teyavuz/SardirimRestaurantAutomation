@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18162d459f894c28807413ab4afa6bb7" Name="Diagram1">
+        <EntityTypeShape EntityType="SardirimRest_DBModel.C_FoodStatuses" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.C_PaymentStatues" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.C_StaffTypes" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Accounting" Width="1.5" PointX="7.5" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Bill" Width="1.5" PointX="12.75" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Branch" Width="1.5" PointX="0.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Company" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Customer" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.MainProductDetail" Width="1.5" PointX="7.5" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.MainProduct" Width="1.5" PointX="5.25" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.OrderDetail" Width="1.5" PointX="12.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Order" Width="1.5" PointX="7.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Product" Width="1.5" PointX="10.5" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Reservation" Width="1.5" PointX="10.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.SourceType" Width="1.5" PointX="5.25" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Staff" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Stock" Width="1.5" PointX="10.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.Table" Width="1.5" PointX="10.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SardirimRest_DBModel.UnitType" Width="1.5" PointX="5.25" PointY="36.25" IsExpanded="true" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__FoodStatuses_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__FoodStatuses_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders__FoodStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__PaymentStatues_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__PaymentStatues_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders__PaymentStatues" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__StaffTypes_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK__StaffTypes_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Staffs__StaffTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Accountings_SourceTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Accountings_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Accountings_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Bills_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Bills_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Bills_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Bills_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Branches_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Branches_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Staffs_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Tables_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Customers_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Customers_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Reservations_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_MainProductDetails_MainProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_MainProductDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_MainProductDetails_UnitTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_MainProducts_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_MainProducts_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Stocks_MainProducts" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_OrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders_Staffs2" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Orders_Tables" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Reservations_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Reservations_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Reservations_Tables" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_SourceTypes_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_SourceTypes_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Staffs_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Staffs_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Tables_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Tables_Staffs1" ManuallyRouted="false" />
+        <AssociationConnector Association="SardirimRest_DBModel.FK_Stocks_UnitTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

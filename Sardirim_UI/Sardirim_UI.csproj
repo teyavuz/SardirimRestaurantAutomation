@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7BB1D239-D930-4F8D-8A5E-FCB45C07CE82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sardirim_UI</RootNamespace>
+    <AssemblyName>Sardirim_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formlar\Kasa\PaymentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kasa\PaymentScreen.Designer.cs">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\AddFood.Designer.cs">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\AddMainProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\AddMainProduct.Designer.cs">
+      <DependentUpon>AddMainProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\FoodStatusUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\FoodStatusUpdate.Designer.cs">
+      <DependentUpon>FoodStatusUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\FoodStatusCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Mutfak\FoodStatusCheck.Designer.cs">
+      <DependentUpon>FoodStatusCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Randevu\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Randevu\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Randevu\ReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Randevu\ReservationForm.Designer.cs">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Stok\AccountingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Stok\AccountingForm.Designer.cs">
+      <DependentUpon>AccountingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Stok\StockTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Stok\StockTrack.Designer.cs">
+      <DependentUpon>StockTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kayıt Sistemi\NewCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kayıt Sistemi\NewCustomerForm.Designer.cs">
+      <DependentUpon>NewCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Kayıt Sistemi\NewStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kayıt Sistemi\NewStaffForm.Designer.cs">
+      <DependentUpon>NewStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\Kasa\PaymentScreen.resx">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Mutfak\AddFood.resx">
+      <DependentUpon>AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Mutfak\AddMainProduct.resx">
+      <DependentUpon>AddMainProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Mutfak\FoodStatusCheck.resx">
+      <DependentUpon>FoodStatusCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Mutfak\FoodStatusUpdate.resx">
+      <DependentUpon>FoodStatusUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Randevu\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Randevu\ReservationForm.resx">
+      <DependentUpon>ReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Stok\AccountingForm.resx">
+      <DependentUpon>AccountingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Stok\StockTrack.resx">
+      <DependentUpon>StockTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kayıt Sistemi\NewCustomerForm.resx">
+      <DependentUpon>NewCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kayıt Sistemi\NewStaffForm.resx">
+      <DependentUpon>NewStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA ARKAPLAN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45d34df4612f4c50e88695e649e7a997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sardirim_BLL\Sardirim_BLL.csproj">
+      <Project>{587357b2-caa8-4c4f-bf65-6df9b319ad59}</Project>
+      <Name>Sardirim_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sardirim_DAL\Sardirim_DAL.csproj">
+      <Project>{c8451486-8a99-4484-a1fb-b655d50d57b1}</Project>
+      <Name>Sardirim_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
